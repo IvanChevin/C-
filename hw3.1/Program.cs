@@ -29,7 +29,7 @@ else
 44 5 78 -> 78
 22 3 9 -> 22*/
 
-int a, b, c, max, i = 0;
+/*int a, b, c, max, i = 0;
 string userEnter;
 Console.Write("Введите первое число: ");
 userEnter = Console.ReadLine();
@@ -49,4 +49,21 @@ if (max < c)
 {
     max = c;
 }
-Console.WriteLine($"Максимальное из введенных чисел, число {max}");
+Console.WriteLine($"Максимальное из введенных чисел, число {max}");*/
+
+/*Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+4 -> да
+-3 -> нет
+7 -> нет*/
+
+double a;
+string userEnter;
+Console.Write("Введите число: ");
+userEnter = Console.ReadLine();
+double.TryParse(userEnter, out a);
+if (a % 2 != 0)
+{
+    Console.WriteLine("нечетное");
+}
+else Console.WriteLine("четное");
