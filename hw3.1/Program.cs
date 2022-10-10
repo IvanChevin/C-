@@ -57,7 +57,7 @@ Console.WriteLine($"Максимальное из введенных чисел,
 -3 -> нет
 7 -> нет*/
 
-double a;
+/*double a;
 string userEnter;
 Console.Write("Введите число: ");
 userEnter = Console.ReadLine();
@@ -66,4 +66,20 @@ if (a % 2 != 0)
 {
     Console.WriteLine("нечетное");
 }
-else Console.WriteLine("четное");
+else Console.WriteLine("четное");*/
+
+/*Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+5 -> 2, 4
+8 -> 2, 4, 6, 8*/
+
+int N, n = 2;
+string userEnter;
+Console.Write("Введите число: ");
+userEnter = Console.ReadLine();
+int.TryParse(userEnter, out N);
+while (n <= N)
+{
+    Console.Write($"{n} ");
+    n = n + 2;
+}
