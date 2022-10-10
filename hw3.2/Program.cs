@@ -1,2 +1,51 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задача 10: Напишите программу, которая принимает на вход трёхзначное число 
+// и на выходе показывает вторую цифру этого числа.
+
+// 456 -> 5
+// 782 -> 8
+// 918 -> 1
+/*
+int rand = new Random().Next(100, 1000);
+
+Console.WriteLine(rand);
+
+Console.Write($"{rand / 10 % 10}");
+*/
+
+// Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+// 645 -> 5
+// 78 -> третьей цифры нет
+// 32679 -> 6
+
+/*
+int a;
+int.TryParse(Console.ReadLine()!, out a);
+
+int temp = a;
+int k = 0;
+while (temp > 0)
+{
+    temp /= 10;
+    k++;
+}
+
+if (k > 2)
+    Console.Write($"{(a / (int)Math.Pow(10, k - 3)) % 10}");
+else
+    Console.Write($"Третьей цифры не существует");
+*/
+
+
+// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+
+/*
+int rand = new Random().Next(1, 8);
+Console.WriteLine(rand);
+if (rand > 5)
+    Console.Write("да");
+else Console.Write("нет");
+*/
