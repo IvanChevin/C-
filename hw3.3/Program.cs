@@ -5,6 +5,7 @@
 // 23432 -> да
 
 int a, b, c, d, userEnter;
+Console.Write("Введите пятизначное число: ");
 int.TryParse(Console.ReadLine()!, out userEnter);
 a = userEnter / 10000;
 b = userEnter / 1000 % 10;
