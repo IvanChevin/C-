@@ -35,9 +35,9 @@ int RecSum(int _M, int _N)
 // Даны два неотрицательных числа m и n.
 // m = 2, n = 3 -> A(m,n) = 9
 // m = 3, n = 2 -> A(m,n) = 29
-
-int m = 2;//new Random().Next(1, 10);
-int n = 3;//new Random().Next(1, 10);
+/*
+int m = new Random().Next(1, 4);
+int n = new Random().Next(1, 10);
 
 int AckermannFunction(int numberM, int numberN)
 {
@@ -47,4 +47,4 @@ int AckermannFunction(int numberM, int numberN)
     return AckermannFunction(numberM, numberN);
 }
 
-Console.Write($"m = {m}, n = {n} -> {AckermannFunction(m, n)}");
+Console.Write($"m = {m}, n = {n} -> {AckermannFunction(m, n)}");        */
